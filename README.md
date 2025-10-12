@@ -1,11 +1,11 @@
-This repo helps track my journey of building my ideal development environment!  
-I like to keep things close to default, portable, and easy to maintain (not to mention looking good :).  
-My aim is minimal friction between having a thought and building it.  
+This repo helps track the journey of building my ideal development environment!  
+I like to keep things close to default, portable, easy to maintain and not to mention looking good :)  
+My aim is minimal friction between having a thought and building it. 
 
 ### whats in here ?
 - [Neovim](https://github.com/neovim/neovim) + [Tmux](https://github.com/tmux/tmux) (my swiss army knives!)
 - [Ghostty](https://github.com/ghostty-org/ghostty), [Aerospace](https://github.com/open-aerospace), zshrc ...
-- Custom scripts
+- Custom scripts and other configs
 
 ![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV2.png?raw=true)
 
