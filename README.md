@@ -1,5 +1,3 @@
-## T's Unix Dotfiles
-
 This repo helps track my journey of building my ideal development environment!  
 I like to keep things close to default, portable, and easy to maintain (not to mention looking good :).  
 My aim is minimal friction between having a thought and building it.  
@@ -15,9 +13,6 @@ My aim is minimal friction between having a thought and building it.
   
 ![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV2-etc.png?raw=true)
 
-### V1
-
-![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV1.png?raw=true)
 </details>
 
 ### Usage / Installation  
