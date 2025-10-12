@@ -9,12 +9,6 @@ My aim is minimal friction between having a thought and building it.
 
 ![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV2.png?raw=true)
 
-<details><summary><h3>More Screenshots</h3></summary>
-  
-![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV2-etc.png?raw=true)
-
-</details>
-
 ### Usage / Installation  
 
 First, install `stow` using your package manager : 
@@ -49,4 +43,10 @@ git clone https://github.com/buzzedowl/dotfiles.git ~
 cd dotfiles
 stow .
 ```
+<details><summary><h3>More Screenshots</h3></summary>
+  
+![Dotfiles Preview](https://github.com/TamerHamdan/repo-media/blob/main/dotfiles/dotfilesV2-etc.png?raw=true)
+
+</details>
+
 Feel free to look around, fork, or contribute!
