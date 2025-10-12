@@ -22,7 +22,8 @@ return {
 			require("mini.surround").setup()
 			
 			-- Add animations for common Neovim actions
-			require("mini.animate").setup()
+			-- require("mini.animate").setup()
+
 			
 			-- Auto pairs for brackets, quotes, etc.
 			require("mini.pairs").setup()

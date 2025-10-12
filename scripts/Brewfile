@@ -1,65 +1,12 @@
-# Taps #
-tap "homebrew/bundle"
 tap "nikitabobko/tap"
-
-# Language Support #
-brew "go"
-brew "java"
-brew "lua"
-brew "python"
-brew "rust"
-
-# CLI Tools #
-brew "curl"
-brew "fastfetch"
-brew "figlet"
-brew "gh"
-brew "lazygit"
+brew "git"
 brew "neovim"
 brew "stow"
 brew "tmux"
-brew "tree"
-
-# Development Tools #
-brew "ripgrep"
-brew "tree-sitter"
-
-# Web Development #
-brew "node"
-
-# LSP & Language Servers #
-brew "llvm"
-brew "lua-language-server"
-
-# Lua Development Tools #
-brew "luacheck"
-brew "selene"
-brew "stylua"
-
-# Git Tools #
-brew "git-filter-repo"
-brew "gitleaks"
-
-# C Development #
-brew "autoconf"
-brew "autoconf-archive"
-brew "automake"
-brew "ccache"
-brew "cmake"
-brew "nasm"
-brew "pkgconf"
-brew "sdl2"
-brew "utf8proc", args: ["HEAD"]
-
-# Casks #
 cask "aerospace"
-cask "bluestacks"
-cask "docker"
-cask "font-jetbrains-mono-nerd-font"
+cask "cursor"
+cask "docker-desktop"
 cask "ghostty"
 cask "karabiner-elements"
-cask "raycast"
-cask "spotify"
+cask "obsidian"
 cask "zen"
-cask "godot"
-

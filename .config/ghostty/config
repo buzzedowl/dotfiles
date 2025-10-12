@@ -1,13 +1,12 @@
 # ~~~~~~~~~~~~~~~~~~~~ Look & Feel ~~~~~~~~~~~~~~~~~~~~
 #
 # Theme 
-theme = rose-pine
+theme = Rose Pine  
 # background-opacity = 0.9
 # background-blur-radius = 50
 
 # Font 
 font-size = "21"
-font-family = JetBrains Mono Nerd Font
 
 # Title 
 title = " "

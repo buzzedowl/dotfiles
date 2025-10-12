@@ -32,15 +32,13 @@
 
 [commit]
     verbose = true
+	gpgsign = true
 
 [diff]
     algorithm = histogram
 
 [rerere]
-    enabled = true 
-
-[merge]
-    conflictStyle = zdiff3
-
-[rerere]
     enabled = true
+    autoupdate = true
+[gpg]
+	format = ssh

@@ -8,11 +8,9 @@
 !.zshrc
 !.gitconfig
 !README.md
-
 # Include .config directory but ignore its contents by default
 !.config/
 .config/*
-
 # Selectively include specific config apps that are currently in repo
 !.config/aerospace/
 !.config/aerospace/**
@@ -28,26 +26,21 @@
 !.config/tmux/**
    
 # Include scripts 
+!scripts/
 !scripts/**
-
 # System/privacy stuff
-
 # macOS
-**/.DS_Store
 .DS_Store
 ._*
 .Spotlight-V100
 .Trashes
-
 # Windows
 Thumbs.db
 desktop.ini
-
 # Linux
 *~
 .directory
 .Trash-*
-
 # SSH and security files
 *.pem
 *.key
@@ -59,21 +52,34 @@ id_ecdsa
 id_ed25519
 .ssh/
 .gnupg/
-
+# API tokens and auth files
+.netrc
+.authinfo
+.authinfo.gpg
+token.txt
+auth.json
+secrets.json
+credentials.json
 # Environment and secrets
 .env
 .env.local
 .env.*.local
 *.log
-auth.json
-secrets.json
-credentials.json
-
+# History files
+.zsh_history
+.bash_history
+.node_repl_history
+.python_history
+.history/
 # Temporary files
 *.tmp
 *.swp
-*~
+*.swo
+*.swn
+.netrwhist
+Session.vim
 .cache/
-.history/
-.zsh_history
-.bash_history
+# Backup files
+*.bak
+*.backup
+*.orig
