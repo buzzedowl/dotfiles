@@ -1,18 +1,19 @@
 # ~~~~~~~~~~~~~~~~~~~~ Look & Feel ~~~~~~~~~~~~~~~~~~~~
-#
-# Theme 
-theme = Rose Pine  
+
+# Theme
+theme = Rose Pine
 # background-opacity = 0.9
 # background-blur-radius = 50
 
-# Font 
-font-size = "21"
+# Font
+font-size = 21
+font-family = JetBrainsMono Nerd Font
 
-# Title 
+# Title
 title = " "
 macos-titlebar-proxy-icon = hidden
 
-# Behaviour 
+# Behavior
 scrollback-limit = 1000000
 mouse-hide-while-typing = true
 
@@ -21,5 +22,5 @@ mouse-hide-while-typing = true
 confirm-close-surface = false
 
 # ~~~~~~~~~~~~~~~~~~~~ KEYBINDINGS ~~~~~~~~~~~~~~~~~~~~
-#
+
 keybind = super+r=reload_config

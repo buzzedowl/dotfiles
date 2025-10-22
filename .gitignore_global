@@ -1,76 +1,19 @@
 # ~~~~~~~~~~~~~~~~~~~~~~ Global Gitignore Mac/Linux ~~~~~~~~~~~~~~~~~~~~~~ #
-#
+
 # macOS
 .DS_Store
-.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 .fseventsd
-.VolumeIcon.icns
 
 # Linux
 *~
 .directory
 .Trash-*
 .nfs*
-.fuse_hidden*
 
-# Neovim/Vim
-*.swp
-*.swo
-*.tmp
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-Session.vim
-Sessionx.vim
-.netrwhist
-tags
-[._]*.un~
-
-# IDEs
-.vscode/
-.idea/
-*.iml
-.cursor/
-
-# System Files
-*.log
-*.pid
-*.out
-.cache/
-
-# Shell History
-.bash_history
-.zsh_history
-.lesshst
-
-# Dependencies
-node_modules/
-.npm/
-.yarn/
-.pnp/
-bower_components/
-
-# Environment
-.env
-.env.*
-.envrc
-
-# Build Output
-*.o
-*.so
-*.dll
-*.dylib
-dist/
-build/
-*.egg-info/
-
-# Version Control
-*.orig
-*.rej
-
-# Security & Keys
+# Security & Keys (Critical)
 *.key
 *.pem
 *.p12
@@ -81,3 +24,53 @@ id_ecdsa*
 id_ed25519*
 .ssh/
 .gnupg/
+
+# Environment & Secrets
+.env
+.env.*
+.envrc
+secrets.json
+credentials.json
+token.txt
+auth.json
+.netrc
+.authinfo*
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+.cursor/
+
+# Dependencies
+node_modules/
+.npm/
+.yarn/
+bower_components/
+
+# Build Output
+dist/
+build/
+*.o
+*.so
+*.dll
+*.dylib
+*.egg-info/
+
+# Temporary Files
+*.tmp
+*.swp
+*.swo
+*.bak
+*.backup
+*.orig
+.cache/
+
+# Logs & History
+*.log
+.bash_history
+.zsh_history
+.history/
+
+# Version Control
+*.rej

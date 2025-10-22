@@ -1,57 +1,67 @@
-# ~~~~~~~~~~~~~~~ oh-my-zsh ~~~~~~~~~~~~~~~ #
-#
-# Path to your Oh My Zsh installation, Using Default config. 
-export ZSH="$HOME/.oh-my-zsh"
+# ~~~~~~~~~~~~~~~ Oh My Zsh ~~~~~~~~~~~~~~~
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
+plugins=(git zsh-autosuggestions z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-# ~~~~~~~~~~~~~~~ CONFIG ~~~~~~~~~~~~~~~~ #
-#
-# Set to superior editing mode
+
+# ~~~~~~~~~~~~~~~ Shell Environment ~~~~~~~~~~~~~~~
+
+# Editor (used by shell commands)
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# Terminal
+export TERM=xterm-256color
+
+# ~~~~~~~~~~~~~~~ Shell Options ~~~~~~~~~~~~~~~
+
+# Vi mode
 bindkey -v
 
-# History settings
+# History
 HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
 
-# Case insensitive completion
+# Completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' menu select
+
+# ~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~
+
+# Quick commands
+alias c='clear'
+alias q='exit'
+alias r='source ~/.zshrc'
 
 # Editor
-export EDITOR='nvim'
-export VISUAL='nvim'
-export BROWSER='zen' 
-
-# ~~~~~~~~~~~~~~~ ALIASES ~~~~~~~~~~~~~~~ #
-#
-# Most Used #
 alias v='nvim'
-alias t='tmux'
-alias c='clear' 
-alias q='exit' 
-              
-# Navigation #
-alias ..='cd ..'
-alias ...='cd ...'
-alias -- -='cd -'  # Go to previous directory
 
-# Git #
+# Tmux
+alias t='tmux'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias -- -='cd -'
+
+# Git
 alias ga='git add .'
 alias gc='git commit -m'
 alias gpm='git push origin main'
 alias gpl='git pull origin main'
 alias gg='lazygit'
 
-# Language Specific #
+# Language
 alias py='python3'
 
-# Reload Config #
-alias r='source ~/.zshrc'  
+# ~~~~~~~~~~~~~~~ Functions ~~~~~~~~~~~~~~~
 
-# Open nvim in tmux # 
+# Open nvim in tmux
 vv() {
     [ -z "$TMUX" ] && tmux new-session "nvim $*" || tmux new-window "nvim $*"
 }

@@ -1,19 +1,10 @@
-# ~~~~~~~~~~~~~~~ LOGIN & STARTUP ~~~~~~~~~~~~~~~ #
-after-login-command = []
+# ~~~~~~~~~~~~~~~ LOGIN & STARTUP ~~~~~~~~~~~~~~~
 
+start-at-login = true
+after-login-command = []
 after-startup-command = []
 
-# Start AeroSpace at login
-start-at-login = true
-
-
-# ~~~~~~~~~~~~~~~ LAYOUT SETTINGS ~~~~~~~~~~~~~~~ #
-#
-# Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = true
-enable-normalization-opposite-orientation-for-nested-containers = true
-
-accordion-padding = 30
+# ~~~~~~~~~~~~~~~ LAYOUT SETTINGS ~~~~~~~~~~~~~~~
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -23,49 +14,55 @@ default-root-container-layout = 'tiles'
 #               tall monitor (anything higher than wide) gets vertical orientation
 default-root-container-orientation = 'auto'
 
+# Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+accordion-padding = 30
+
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
+# ~~~~~~~~~~~~~~~ GAPS ~~~~~~~~~~~~~~~
 
-# ~~~~~~~~~~~~~~~ KEY LAYOUT ~~~~~~~~~~~~~~~ #
+[gaps]
+inner.horizontal = 2
+inner.vertical = 2
+outer.left = 2
+outer.right = 2
+outer.top = 2
+outer.bottom = 2
+
+# ~~~~~~~~~~~~~~~ KEY LAYOUT ~~~~~~~~~~~~~~~
+
 [key-mapping]
 preset = 'qwerty'
 
+# ~~~~~~~~~~~~~~~ KEYBINDINGS ~~~~~~~~~~~~~~~
 
-# ~~~~~~~~~~~~~~~ GAPS ~~~~~~~~~~~~~~~ #
-[gaps]
-inner.horizontal = 2
-inner.vertical =   2
-outer.left =       2
-outer.bottom =     2
-outer.top =        2
-outer.right =      2
-
-
-# ~~~~~~~~~~~~~~~ KEYBINDINGS ~~~~~~~~~~~~~~~ #
 [mode.main.binding]
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#layout
+# Layout
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#focus
+# Focus
 alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#move
+# Move
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
 alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#resize
+# Resize
 alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+# Workspace
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
@@ -77,12 +74,12 @@ alt-e = 'workspace E'
 alt-a = 'workspace A'
 alt-s = 'workspace S'
 alt-d = 'workspace D'
+alt-f = 'workspace F'
 alt-z = 'workspace Z'
 alt-x = 'workspace X'
 alt-c = 'workspace C'
-alt-f = 'workspace F'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+# Move to Workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
@@ -94,16 +91,14 @@ alt-shift-e = 'move-node-to-workspace E'
 alt-shift-a = 'move-node-to-workspace A'
 alt-shift-s = 'move-node-to-workspace S'
 alt-shift-d = 'move-node-to-workspace D'
+alt-shift-f = 'move-node-to-workspace F'
 alt-shift-z = 'move-node-to-workspace Z'
 alt-shift-x = 'move-node-to-workspace X'
 alt-shift-c = 'move-node-to-workspace C'
-alt-shift-f = 'move-node-to-workspace F'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
+# Workspace Navigation
 alt-tab = 'workspace-back-and-forth'
-
-# See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+# Mode
 alt-shift-semicolon = 'mode service'
