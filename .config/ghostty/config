@@ -1,26 +1,18 @@
-# ~~~~~~~~~~~~~~~~~~~~ Look & Feel ~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~ Configuration ~~~~~~~~~~~~~~~~~~~~
 
-# Theme
-theme = Rose Pine
+# Theme & Font
+theme = Rose Pine 
+font-size = 20
+font-family = JetBrainsMono Nerd Font
 # background-opacity = 0.9
 # background-blur-radius = 50
 
-# Font
-font-size = 21
-font-family = JetBrainsMono Nerd Font
-
-# Title
+# Behavior
 title = " "
 macos-titlebar-proxy-icon = hidden
-
-# Behavior
-scrollback-limit = 1000000
 mouse-hide-while-typing = true
-
-# Preference
-# window-save-state = always
+macos-option-as-alt = true 
 confirm-close-surface = false
 
-# ~~~~~~~~~~~~~~~~~~~~ KEYBINDINGS ~~~~~~~~~~~~~~~~~~~~
-
+# Keybindings
 keybind = super+r=reload_config

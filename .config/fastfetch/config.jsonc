@@ -1,97 +1,103 @@
 {
     "logo": {
         "type": "kitty",
-        "source": "apple"
+        "padding": {
+            "top": 1,
+            "right": 5
+        }
     },
     "modules": [
         "break",
         {
             "type": "custom",
-            "format": "┌─── Hardware ────────────────────────────────────────────┐",
-            "outputColor": "red"
+            "format": "┌─── Hardware ─────────────────────────────────────────────",
+            "outputColor": "green"
         },
         {
             "type": "title",
-            "key": "  User",
+            "key": " User     ",
             "keyColor": "green"
         },
         {
             "type": "cpu",
-            "key": "│  ├󰍛 CPU",
+            "key": " CPU      ",
             "showPeCoreCount": true,
             "format": "{1}",
             "keyColor": "green"
         },
         {
             "type": "memory",
-            "key": "│  ├󰍛 Memory",
+            "key": " Memory   ",
             "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": " Storage  ",
+            "keyColor": "green",
+            "format": "{1} / {2} ({3})"
         },
         {
             "type": "battery",
-            "key": "└  └ Battery",
+            "key": " Battery  ",
             "keyColor": "green"
-        },
-        {
-            "type": "custom",
-            "format": "└─────────────────────────────────────────────────────────┘",
-            "outputColor": "red"
-        },
-        {
-            "type": "custom",
-            "format": "┌─── Software ────────────────────────────────────────────┐",
-            "outputColor": "red"
-        },
-        {
-            "type": "os",
-            "key": "  OS",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "kernel",
-            "key": "│  ├ Kernel",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "packages",
-            "key": "│  ├󰏖 Packages",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "uptime",
-            "key": "└  └ Uptime",
-            "keyColor": "yellow"
         },
         "break",
         {
-            "type": "de",
-            "key": "  DE",
+            "type": "custom",
+            "format": "┌─── Software ─────────────────────────────────────────────",
+            "outputColor": "blue"
+        },
+        {
+            "type": "os",
+            "key": " OS       ",
             "keyColor": "blue"
         },
         {
-            "type": "lm",
-            "key": "│  ├ LM",
+            "type": "kernel",
+            "key": " Kernel   ",
             "keyColor": "blue"
         },
         {
-            "type": "wm",
-            "key": "│  ├ WM",
+            "type": "uptime",
+            "key": " Uptime   ",
             "keyColor": "blue"
         },
         {
-            "type": "terminalfont",
-            "key": "│  ├ Terminal Font",
+            "type": "packages",
+            "key": " Packages ",
             "keyColor": "blue"
         },
         {
             "type": "terminal",
-            "key": "└  └ Terminal",
+            "key": " Terminal ",
             "keyColor": "blue"
         },
         {
+            "type": "terminalfont",
+            "key": " Font     ",
+            "keyColor": "blue"
+        },
+        "break",
+        {
             "type": "custom",
-            "format": "└─────────────────────────────────────────────────────────┘",
-            "outputColor": "red"
+            "format": "┌─── Network ──────────────────────────────────────────────",
+            "outputColor": "magenta"
+        },
+        {
+            "type": "localip",
+            "key": " Local  IP",
+            "keyColor": "magenta",
+            "compact": true
+        },
+        {
+            "type": "publicip",
+            "key": " Public IP",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "dns",
+            "key": " DNS      ",
+            "keyColor": "magenta"
         }
     ]
 }
